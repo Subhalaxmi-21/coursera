@@ -128,6 +128,8 @@ function buildAndShowHomeHTML (categories) {
 }
 
 
+
+
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
@@ -215,8 +217,7 @@ function buildCategoriesViewHtml(categories,
 
 // Builds HTML for the single category page based on the data
 // from the server
-
-      function buildAndShowMenuItemsHTML (categoryMenuItems) {
+function buildAndShowMenuItemsHTML (categoryMenuItems) {
   // Load title snippet of menu items page
   $ajaxUtils.sendGetRequest(
     menuItemsTitleHtml,
