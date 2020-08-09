@@ -229,8 +229,8 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
           // Switch CSS class active to menu button
           switchMenuToActive();
           
-          var menuItemsViewHtml = 
-            buildMenuItemsViewHtml(categoryMenuItems, 
+         var menuItemsViewHtml =
+            buildMenuItemsViewHtml(categoryMenuItems,
                                    menuItemsTitleHtml,
                                    menuItemHtml);
           insertHtml("#main-content", menuItemsViewHtml);
@@ -247,10 +247,10 @@ function buildMenuItemsViewHtml(categoryMenuItems,
                                 menuItemsTitleHtml,
                                 menuItemHtml) {
   
-  menuItemsTitleHtml = 
+  menuItemsTitleHtml =
     insertProperty(menuItemsTitleHtml,
                    "name",
-                   categoryMenuItems.category.name);
+                   categoryMenuItems.categories.name);
   menuItemsTitleHtml = 
     insertProperty(menuItemsTitleHtml,
                    "special_instructions",
