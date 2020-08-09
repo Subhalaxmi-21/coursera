@@ -246,6 +246,7 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
 function buildMenuItemsViewHtml(categoryMenuItems, 
                                 menuItemsTitleHtml,
                                 menuItemHtml) {
+  console.log(categoryMenuItems.categories.name);
   
   menuItemsTitleHtml =
     insertProperty(menuItemsTitleHtml,
