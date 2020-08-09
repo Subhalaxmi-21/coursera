@@ -246,12 +246,11 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
 function buildMenuItemsViewHtml(categoryMenuItems, 
                                 menuItemsTitleHtml,
                                 menuItemHtml) {
-  console.log(categoryMenuItems.category.name);
   
   menuItemsTitleHtml =
     insertProperty(menuItemsTitleHtml,
                    "name",
-                   categoryMenuItems.category.name);
+                    categoryMenuItems.categories.name);
   menuItemsTitleHtml = 
     insertProperty(menuItemsTitleHtml,
                    "special_instructions",
